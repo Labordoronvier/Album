@@ -15,7 +15,7 @@ const handleImageError = (e) => {
 
 /* ── Page data ───────────────────────────────────────────── */
 const PAGE_DATA = [
-  { title: "Chapter I",  images: ["coffee date1.jpg","coffee date2.jpg","coffee date3.jpg","1.jpg"] },
+  { title: "Chapter I",    images: ["coffee date1.jpg","coffee date2.jpg","coffee date3.jpg","1.jpg"] },
   { title: "Chapter II",   images: ["2.jpg","3.jpg","4.jpg","5.jpg"] },
   { title: "Chapter III",  images: ["6.jpg","7.jpg","8.jpg","9.jpg"] },
   { title: "Chapter IV",   images: ["10.jpg","11.jpg","12.jpg","13.jpg"] },
@@ -215,7 +215,7 @@ function App() {
               page={page}
               index={idx}
               isOpen={openPages[idx]}
-              zIndex={openPages[idx] ? idx + 1 : TOTAL - idx}
+              zIndex={openPages[idx] ? TOTAL + idx + 1 : TOTAL - idx}
               totalPages={TOTAL}
             />
           ))}
